@@ -14,7 +14,6 @@ import com.example.todolist.model.datasource.local.entities.SubTaskEntity
 import com.example.todolist.model.datasource.local.entities.TaskEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 

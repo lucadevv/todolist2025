@@ -28,6 +28,13 @@ android {
             )
         }
     }
+//    configurations {
+//        create("cleanedAnnotations")
+//        implementation {
+//            exclude(group = "org.jetbrains", module = "annotations")
+//        }
+//    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -52,7 +59,7 @@ dependencies {
     implementation(libs.androidx.material3)
     //---------- [  room database ]-----------------
     implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.room.ksp)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
     //----------
     testImplementation(libs.junit)

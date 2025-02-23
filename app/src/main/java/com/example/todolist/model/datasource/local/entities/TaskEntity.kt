@@ -7,9 +7,6 @@ import androidx.room.PrimaryKey
 
 @Entity(
     tableName = "task_table",
-    primaryKeys = [
-      "idTask"
-                  ],
     foreignKeys = [
         ForeignKey(
             CategoryEntity::class,
